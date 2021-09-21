@@ -36,3 +36,5 @@ for i in range(1, num_obre+1):
         nhoras_extras = nhoras - 40
         salario = 40 * 20 + nhoras_extras * 25
     print(f"El salario del obrero {i} es: ${salario}")
+    
+#ej4
