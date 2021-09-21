@@ -92,3 +92,8 @@ for i in range (1, numC + 1):
         print(f"El teatro dejo de percibir en el rango de 20 - 45: {edad2045}")
         print(f"El teatro dejo de percibir en el rango de 46 - 65: {edad4665}")
         print(f"El teatro dejo de percibir en el rango de 66:      {edad66}")
+        
+
+
+
+        
