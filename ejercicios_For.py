@@ -38,3 +38,12 @@ for i in range(1, num_obre+1):
     print(f"El salario del obrero {i} es: ${salario}")
     
 #ej4
+
+#ej5
+minimo = 9999
+numeros = int(input("¿Cuantos numeros desea ingresar?: "))
+for i in range (1, numeros+1):
+    num = int(input(f"Digite su {i} numero: "))
+    if num < minimo:
+        minimo = num
+    print(f"El numero menor es: {minimo}")
