@@ -25,3 +25,14 @@ for i in range (1, numA + 1):
         print(f" EL {i} auto tiene su calcomania Azul")
         
 #ej2
+
+#ej3
+num_obre = int(input("Digite el numero de obreros: "))
+for i in range(1, num_obre+1):
+    nhoras = float(input(f"Digite el numero de horas trabajadas del {i} trabajador: "))
+    if(nhoras <= 40):
+        salario = 20 * nhoras
+    else:
+        nhoras_extras = nhoras - 40
+        salario = 40 * 20 + nhoras_extras * 25
+    print(f"El salario del obrero {i} es: ${salario}")
