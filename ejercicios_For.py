@@ -59,3 +59,36 @@ for i in range (5):
         print("Usted bajo de peso!")
         
 #ej7
+
+#eje8
+precioA = int(input("Digite el precio de los asientos: "))
+numC = int(input("Digite el numero de clientes: "))
+edad514 = 0
+edad1519 = 0
+edad2045 = 0
+edad4665 = 0
+edad66 = 0
+
+for i in range (1, numC + 1):
+    edad = int(input(f"Digite la edad persona {i}: "))
+    
+    porcentaje1 = precioA * 0.35
+    porcentaje2 = precioA * 0.25
+    porcentaje3 = precioA * 0.10
+    
+    if (edad >= 5 and edad <= 14):
+        edad514 += porcentaje1
+    if (edad >= 15 and edad <= 19):
+        edad1519 += porcentaje2
+    if (edad >= 20 and edad <= 45):
+        edad2045 += porcentaje3
+    if (edad >= 46 and edad <= 65):
+        edad4665 = porcentaje2
+    if (edad >= 66):
+        edad66 += porcentaje1 
+        
+        print(f"El teatro dejo de percibir en el rango de 5 - 14:  {edad514}")
+        print(f"El teatro dejo de percibir en el rango de 15 - 18: {edad1519}")
+        print(f"El teatro dejo de percibir en el rango de 20 - 45: {edad2045}")
+        print(f"El teatro dejo de percibir en el rango de 46 - 65: {edad4665}")
+        print(f"El teatro dejo de percibir en el rango de 66:      {edad66}")
