@@ -57,3 +57,5 @@ for i in range (5):
     else:
         pesoAc < pesoAn
         print("Usted bajo de peso!")
+        
+#ej7
