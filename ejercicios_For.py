@@ -93,7 +93,31 @@ for i in range (1, numC + 1):
         print(f"El teatro dejo de percibir en el rango de 46 - 65: {edad4665}")
         print(f"El teatro dejo de percibir en el rango de 66:      {edad66}")
         
+#eje9
+sumatoria1 = 0
+sumatoria2 = 0
+sumatoria3 = 0
+sumatoria4 = 0
+sumatoria5 = 0
 
+
+
+for i in range (100):
+    
+    valorV = random.randint(0, 180000000)
+
+    #vendido = int(input("Digite el valor vendido por la persona {i}"))
+    
+    if (valorV < 20000000):
+        sumatoria1 += (valorV * 0.10)
+    if (valorV >= 20000000 and valorV < 40000000):
+        sumatoria2 += (valorV * 0.15)
+    if (valorV >= 40000000 and valorV < 80000000):
+        sumatoria3 += (valorV * 0.20)
+    if (valorV >= 80000000 and valorV < 160000000):
+        sumatoria4 += (valorV * 0.25)
+    if (valorV >= 1600000000):
+        sumatoria5 += (valorV * 0.30)
 
 
         
