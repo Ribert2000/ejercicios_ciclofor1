@@ -118,6 +118,30 @@ for i in range (100):
         sumatoria4 += (valorV * 0.25)
     if (valorV >= 1600000000):
         sumatoria5 += (valorV * 0.30)
+        
+#ej10
+votantes = int(input("Digite cuantos votantes son: "))
+
+contador1 = 0
+contador2 = 0
+contador3 = 0
+
+for i in range (1, votantes+1):
+    ref_candidato = int(input(f"Persona {i} digite el numero del candidato que obtendra su voto, sea 1, 2 o 3: "))
+    if (ref_candidato == 1):
+        contador1 = contador1 + 1
+    elif (ref_candidato == 2):
+        contador2 = contador2 + 1
+    elif (ref_candidato == 3):
+        contador3 = contador3 + 1
+if (contador1 > contador2 and contador1 > contador3):
+    print(f"El candidato electo fue el 1 con {contador1} votos")
+if (contador2 > contador1 and contador2 > contador3):
+    print(f"El candidato electo fue el 2 con {contador2} votos")
+if (contador3 > contador2 and contador3 > contador1):
+    print(f"El candidato electo fue el 3 con {contador3} votos")
+if (contador1 == contador2 and contador1 == contador3 and contador3 == contador2):
+    print(f"Hubo empate con {contador1} votos")
 
 
         
