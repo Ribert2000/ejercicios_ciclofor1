@@ -47,3 +47,13 @@ for i in range (1, numeros+1):
     if num < minimo:
         minimo = num
     print(f"El numero menor es: {minimo}")
+    
+#ej6
+for i in range (5):
+    pesoAn = int(input(f"Digite su peso anterior perona {i+1}: "))
+    pesoAc = int(input(f"Digite su peso actual persona {i+1}: "))  
+    if(pesoAn < pesoAc):
+        print("Subio!")
+    else:
+        pesoAc < pesoAn
+        print("Usted bajo de peso!")
